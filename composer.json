@@ -3,5 +3,8 @@
     "description": "n",
     "type": "n",
     "license": "n",
-    "require": {}
+    "require": {},
+    "bin": [
+        "bin/brain-games"
+    ]
 }
