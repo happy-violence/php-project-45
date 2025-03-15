@@ -9,9 +9,15 @@
     "bin": [
         "bin/brain-games"
     ],
+    "scripts": {
+        "phpcs": "phpcs"
+    },
     "autoload": {
         "files": [
             "src/Cli.php"
         ]
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
     }
 }
