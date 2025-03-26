@@ -6,23 +6,15 @@ require_once __DIR__ . '/../vendor/autoload.php';
 use function Src\isEven;
 use function cli\line;
 use function cli\prompt;
+use function Src\Engine\startGame;
 
-$count = 0;
-
-line('Welcome to the Brain Game!');
-$name = prompt('May I have your name?');
-line("Hello, %s!", $name);
-
-line('Answer "yes" if the number is even, otherwise answer "no".');
-while($count < 3) {
+function logic() :array
+{
+    //line('Answer "yes" if the number is even, otherwise answer "no".');
     $num = rand(1, 100);
     $userAnswer = prompt('Question: ' . $num);
-    if($userAnswer === isEven($num)) {
-        line('Correct!');
-        $count++;
-    } else {
-        line($userAnswer . ' is wrong answer ;(. Correct answer was ' . isEven($num) . '. Let\'s try again, ' . $name . '!');
-        $count = 0;
-    }
+    $correctAnswer = isEven($num);
+    return [$userAnswer, $correctAnswer];
 }
-line('Congratulations, ' . $name . '!');
+
+startGame('Answer "yes" if the number is even, otherwise answer "no".');
