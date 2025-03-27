@@ -5,5 +5,9 @@
 ### аскинема по первой игре (even):
 https://asciinema.org/a/HZaPhNMU2vfMyCeaP5VUmoWB5
 
-### аскинема по dnjhjq игре (calc):
+### аскинема по второй игре (calc):
 https://asciinema.org/a/gOtSXi0jx70EbSRcuCXdiA0x8
+
+### аскинема по третьей игре (gcd):
+https://asciinema.org/a/3NE1P64HSutk7rCNH8wQv5uU6
+
