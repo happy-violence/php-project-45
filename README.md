@@ -11,3 +11,6 @@ https://asciinema.org/a/gOtSXi0jx70EbSRcuCXdiA0x8
 ### аскинема по третьей игре (gcd):
 https://asciinema.org/a/3NE1P64HSutk7rCNH8wQv5uU6
 
+### аскинема по четвёртой игре (progression):
+https://asciinema.org/a/ehrNeaNYo1n72cvXWuPaPjWlN
+

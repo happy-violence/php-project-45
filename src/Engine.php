@@ -7,13 +7,13 @@ use function cli\prompt;
 
 
 
-function startGame(string $info): void
+function startGame(string $question): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
 
-    line($info);
+    line($question);
     $count = 0;
     while($count < 3) {
 
