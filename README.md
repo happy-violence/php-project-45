@@ -14,3 +14,6 @@ https://asciinema.org/a/3NE1P64HSutk7rCNH8wQv5uU6
 ### аскинема по четвёртой игре (progression):
 https://asciinema.org/a/ehrNeaNYo1n72cvXWuPaPjWlN
 
+### аскинема по пятой игре (prime):
+https://asciinema.org/a/Y17tjtkKGHyQoXUYO2S9CkGWO
+
