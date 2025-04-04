@@ -2,9 +2,7 @@
 
 namespace BrainGames\Games\Prime;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function isPrime($num): string
 {
@@ -32,14 +30,16 @@ function isPrime($num): string
     return $isPrime;
 }
 
-function logic(): array
+function runPrime(): void
 {
-    $num = rand(1, 30);
+    $data = [];
+    while (count($data) < 3) {
+        $num = rand(1, 30);
 
-    $userAnswer = prompt("Question: {$num}");
-    line("Your answer: {$userAnswer}");
-    $correctAnswer = isPrime($num);
-    return [$userAnswer, $correctAnswer];
+        $question = "{$num}";
+        $correctAnswer = isPrime($num);
+        $data[] = [$question, $correctAnswer];
+    }
+
+    startGame('Answer "yes" if given number is prime. Otherwise answer "no".', $data);
 }
-
-startGame('Answer "yes" if given number is prime. Otherwise answer "no".');

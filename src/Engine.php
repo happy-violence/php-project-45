@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames;
+namespace BrainGames\Engine;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -13,7 +13,7 @@ function startGame(string $description, array $data): void
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
     line($description);
-    
+
     foreach ($data as $pair) {
         $correctAnswer = $pair[1];
         $userAnswer = prompt("Question: {$pair[0]}");
@@ -24,7 +24,7 @@ function startGame(string $description, array $data): void
         } else {
             // phpcs:ignore
             line("{$userAnswer} is wrong answer ;(. Correct answer was {$correctAnswer} Let's try again, {$name}!");
-            break;
+            return;
         }
     }
     line("Congratulations, {$name}!");

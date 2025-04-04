@@ -2,9 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function isEven($num): string
 {
@@ -14,12 +12,17 @@ function isEven($num): string
         return 'no';
     }
 }
-function logic(): array
-{
-    $num = rand(1, 100);
-    $userAnswer = prompt("Question: {$num}");
-    $correctAnswer = isEven($num);
-    return [$userAnswer, $correctAnswer];
-}
 
-startGame('Answer "yes" if the number is even, otherwise answer "no".');
+function runEven(): void
+{
+    $data = [];
+    while (count($data) < 3) {
+        $num = rand(1, 100);
+
+        $question = "{$num}";
+        $correctAnswer = isEven($num);
+        $data[] = [$question, $correctAnswer];
+    }
+
+    startGame('Answer "yes" if the number is even, otherwise answer "no".', $data);
+}
