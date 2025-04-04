@@ -3,44 +3,7 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function cli\line;
-use function cli\prompt;
-use function Src\Engine\startGame;
+//use function BrainGames\startGame;
+use function BrainGames\Games\runCalc;
 
-function randomOperation(): string
-{
-    $operations = [
-        '+',
-        '-',
-        '*'
-    ];
-
-    return $operations[array_rand($operations)];
-}
-
-//$operation = randomOperation();
-function calc($num1, $num2, $operation): int
-{
-    switch ($operation) {
-        case '-':
-            return $num1 - $num2;
-        case '*':
-            return $num1 * $num2;
-        case '+':
-            return $num1 + $num2;
-    }
-}
-
-function logic() :array
-{
-    $num1 = rand(1, 20);
-    $num2 = rand(1, 10);
-    $operation = randomOperation();
-
-    $userAnswer = prompt('Question: ' . $num1 . ' ' . $operation . ' ' . $num2);
-    line('Your answer: ' . $userAnswer);
-    $correctAnswer = calc($num1, $num2, $operation);
-    return [$userAnswer, $correctAnswer];
-}
-
-startGame('What is the result of the expression?');
+runCalc();
