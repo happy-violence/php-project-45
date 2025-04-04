@@ -2,9 +2,7 @@
 
 namespace BrainGames\Games\Progression;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function progression(): array
 {
@@ -19,7 +17,7 @@ function progression(): array
     }
     return $progression;
 }
-function logic(): array
+/*function logic(): array
 {
     $progression = progression();
     $len = count($progression);
@@ -31,6 +29,23 @@ function logic(): array
     $userAnswer = prompt("Question: {$stringProgression}");
     line("Your answer: {$userAnswer}");
     return [$userAnswer, $correctAnswer];
-}
+}*/
 
-startGame('What number is missing in the progression?');
+//startGame('What number is missing in the progression?');
+
+function runProgression(): void
+{
+    $data = [];
+    while (count($data) < 3) {
+        $progression = progression();
+        $len = count($progression);
+        $hiddenPosition = rand(0, $len - 1);
+        $correctAnswer = $progression[$hiddenPosition];
+        $progression[$hiddenPosition] = '..';
+        $stringProgression = implode(' ', $progression);
+        $question = "{$stringProgression}";
+        $data[] = [$question, $correctAnswer];
+    }
+
+    startGame('What number is missing in the progression?', $data);
+}

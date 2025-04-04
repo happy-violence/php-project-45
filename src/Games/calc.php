@@ -2,9 +2,7 @@
 
 namespace BrainGames\Games\Calc;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function randomOperation(): string
 {

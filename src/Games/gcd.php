@@ -2,9 +2,7 @@
 
 namespace BrainGames\Games\Gcd;
 
-use function cli\line;
-use function cli\prompt;
-use function BrainGames\startGame;
+use function BrainGames\Engine\startGame;
 
 function gcd($num1, $num2): int
 {
@@ -15,15 +13,18 @@ function gcd($num1, $num2): int
     }
     return $num1;
 }
-function logic(): array
+
+function runGcd(): void
 {
-    $num1 = rand(1, 20);
-    $num2 = rand(1, 10);
+    $data = [];
+    while (count($data) < 3) {
+        $num1 = rand(1, 20);
+        $num2 = rand(1, 10);
 
-    $userAnswer = prompt("Question: {$num1} {$num2}");
-    line("Your answer: {$userAnswer}");
-    $correctAnswer = gcd($num1, $num2);
-    return [$userAnswer, $correctAnswer];
+        $question = "{$num1} {$num2}";
+        $correctAnswer = gcd($num1, $num2);
+        $data[] = [$question, $correctAnswer];
+    }
+
+    startGame('Find the greatest common divisor of given numbers.', $data);
 }
-
-startGame('Find the greatest common divisor of given numbers.');
