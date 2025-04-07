@@ -1,8 +1,8 @@
 {
     "name": "hexlet/code",
-    "description": "n",
-    "type": "n",
-    "license": "n",
+    "description": "5 console math games",
+    "type": "project",
+    "license": "MIT",
     "require": {
         "wp-cli/php-cli-tools": "^0.12.4"
     },

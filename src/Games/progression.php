@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Progression;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\runGame;
 
 function progression(): array
 {
@@ -17,21 +17,6 @@ function progression(): array
     }
     return $progression;
 }
-/*function logic(): array
-{
-    $progression = progression();
-    $len = count($progression);
-    $hiddenPosition = rand(0, $len - 1);
-    $correctAnswer = $progression[$hiddenPosition];
-    $progression[$hiddenPosition] = '..';
-    $stringProgression = implode(' ', $progression);
-
-    $userAnswer = prompt("Question: {$stringProgression}");
-    line("Your answer: {$userAnswer}");
-    return [$userAnswer, $correctAnswer];
-}*/
-
-//startGame('What number is missing in the progression?');
 
 function runProgression(): void
 {
@@ -47,5 +32,5 @@ function runProgression(): void
         $data[] = [$question, $correctAnswer];
     }
 
-    startGame('What number is missing in the progression?', $data);
+    runGame('What number is missing in the progression?', $data);
 }

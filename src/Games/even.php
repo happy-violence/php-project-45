@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Even;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\runGame;
 
 function isEven($num): string
 {
@@ -24,5 +24,5 @@ function runEven(): void
         $data[] = [$question, $correctAnswer];
     }
 
-    startGame('Answer "yes" if the number is even, otherwise answer "no".', $data);
+    runGame('Answer "yes" if the number is even, otherwise answer "no".', $data);
 }
