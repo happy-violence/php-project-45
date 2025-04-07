@@ -2,6 +2,6 @@
 <?php
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use function Src\Cli\greeting;
+use function Cli\greet;
 
-greeting();
+greet();

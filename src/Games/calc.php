@@ -2,7 +2,7 @@
 
 namespace BrainGames\Games\Calc;
 
-use function BrainGames\Engine\startGame;
+use function BrainGames\Engine\runGame;
 
 function randomOperation(): string
 {
@@ -39,5 +39,5 @@ function runCalc(): void
         $data[] = [$question, $correctAnswer];
     }
 
-    startGame('What is the result of the expression?', $data);
+    runGame('What is the result of the expression?', $data);
 }

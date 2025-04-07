@@ -2,30 +2,26 @@
 
 namespace BrainGames\Engine;
 
-require_once __DIR__ . '/../vendor/autoload.php';
-
 use function cli\line;
 use function cli\prompt;
 
-function startGame(string $description, array $data): void
+function runGame(string $description, array $gameData): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    line("Hello, {$name}");
     line($description);
 
-    foreach ($data as $pair) {
-        $correctAnswer = $pair[1];
-        $userAnswer = prompt("Question: {$pair[0]}");
-        line("Your answer: {$userAnswer}");
+    foreach ($gameData as [$question, $correctAnswer]) {
+        line("Question: {$question}");
+        $userAnswer = prompt("Your answer");
 
-        if ($userAnswer == $correctAnswer) {
-            line('Correct!');
-        } else {
+        if ($userAnswer != $correctAnswer) {
             // phpcs:ignore
-            line("{$userAnswer} is wrong answer ;(. Correct answer was {$correctAnswer} Let's try again, {$name}!");
+            line("\"{$userAnswer}\" is wrong answer ;(. Correct answer was \"{$correctAnswer}\" Let's try again, {$name}!");
             return;
         }
+        line('Correct!');
     }
     line("Congratulations, {$name}!");
 }
