@@ -9,7 +9,7 @@ function isPrime($num): string
     $isPrime = '';
     if ($num < 2) {
         $isPrime = 'no';
-    } elseif ($num === 2) {
+    } elseif ($num === 2 || $num === 3) {
         $isPrime = 'yes';
     } else {
         if ($num % 2 === 0) {
