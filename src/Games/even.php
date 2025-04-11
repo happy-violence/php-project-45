@@ -7,13 +7,9 @@ use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-function isEven(int $num): string
+function isEven(int $num): bool
 {
-    if ($num % 2 == 0) {
-        return 'yes';
-    } else {
-        return 'no';
-    }
+    return ($num % 2 == 0) ? (true) : (false);
 }
 
 function runEven(): void
@@ -23,7 +19,7 @@ function runEven(): void
         $num = rand(1, 100);
 
         $question = "{$num}";
-        $correctAnswer = isEven($num);
+        $correctAnswer = (isEven($num)) ? ('yes') : ('no');
         $data[] = [$question, $correctAnswer];
     }
 
