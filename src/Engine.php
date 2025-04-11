@@ -5,11 +5,13 @@ namespace BrainGames\Engine;
 use function cli\line;
 use function cli\prompt;
 
+const NUMBER_OF_ROUNDS = 3;
+
 function runGame(string $description, array $gameData): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
-    line("Hello, {$name}");
+    line("Hello, {$name}!");
     line($description);
 
     foreach ($gameData as [$question, $correctAnswer]) {

@@ -3,6 +3,7 @@
 namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\runGame;
+use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const DESCRIPTION = 'What is the result of the expression?';
 
@@ -32,7 +33,7 @@ function calc(int $num1, int $num2, string $operation): int
 function runCalc(): void
 {
     $data = [];
-    while (count($data) < 3) {
+    while (count($data) < NUMBER_OF_ROUNDS) {
         $num1 = rand(1, 20);
         $num2 = rand(1, 10);
         $operation = randomOperation();
