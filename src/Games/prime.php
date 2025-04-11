@@ -4,7 +4,7 @@ namespace BrainGames\Games\Prime;
 
 use function BrainGames\Engine\runGame;
 
-function isPrime($num): string
+function isPrime(int $num): string
 {
     $isPrime = '';
     if ($num < 2) {

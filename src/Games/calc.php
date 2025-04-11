@@ -15,7 +15,7 @@ function randomOperation(): string
     return $operations[array_rand($operations)];
 }
 
-function calc($num1, $num2, $operation): int
+function calc(int $num1, int $num2, string $operation): int
 {
     switch ($operation) {
         case '-':
