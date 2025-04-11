@@ -4,6 +4,8 @@ namespace BrainGames\Games\Prime;
 
 use function BrainGames\Engine\runGame;
 
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 function isPrime(int $num): string
 {
     $isPrime = '';
@@ -41,5 +43,6 @@ function runPrime(): void
         $data[] = [$question, $correctAnswer];
     }
 
-    runGame('Answer "yes" if given number is prime. Otherwise answer "no".', $data);
+
+    runGame(DESCRIPTION, $data);
 }

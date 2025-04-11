@@ -4,6 +4,8 @@ namespace BrainGames\Games\Calc;
 
 use function BrainGames\Engine\runGame;
 
+const DESCRIPTION = 'What is the result of the expression?';
+
 function randomOperation(): string
 {
     $operations = [
@@ -39,5 +41,5 @@ function runCalc(): void
         $data[] = [$question, $correctAnswer];
     }
 
-    runGame('What is the result of the expression?', $data);
+    runGame(DESCRIPTION, $data);
 }
