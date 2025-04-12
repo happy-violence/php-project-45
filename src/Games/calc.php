@@ -7,16 +7,15 @@ use function BrainGames\Engine\runGame;
 use const BrainGames\Engine\NUMBER_OF_ROUNDS;
 
 const DESCRIPTION = 'What is the result of the expression?';
+const OPERATIONS = [
+    '+',
+    '-',
+    '*'
+];
 
 function randomOperation(): string
 {
-    $operations = [
-        '+',
-        '-',
-        '*'
-    ];
-
-    return $operations[array_rand($operations)];
+    return OPERATIONS[array_rand(OPERATIONS)];
 }
 
 function calc(int $num1, int $num2, string $operation): int
