@@ -21,7 +21,7 @@ function runEven(): void
 
         $question = "{$num}";
         $correctAnswer = (isEven($num)) ? ('yes') : ('no');
-        $data[] = [$question, $correctAnswer];
+        $gameData[] = [$question, $correctAnswer];
     }
 
     runGame(DESCRIPTION, $gameData);
