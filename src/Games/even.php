@@ -10,7 +10,7 @@ const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 function isEven(int $num): bool
 {
-    return ($num % 2 == 0) ? (true) : (false);
+    return ($num % 2 === 0) ? (true) : (false);
 }
 
 function runEven(): void

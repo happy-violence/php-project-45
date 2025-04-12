@@ -18,7 +18,7 @@ function runGame(string $description, array $gameData): void
         line("Question: {$question}");
         $userAnswer = prompt("Your answer");
 
-        if ($userAnswer != $correctAnswer) {
+        if ($userAnswer !== $correctAnswer) {
             // phpcs:ignore
             line("\"{$userAnswer}\" is wrong answer ;(. Correct answer was \"{$correctAnswer}\". Let's try again, {$name}!");
             return;
