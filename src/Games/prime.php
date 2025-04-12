@@ -24,14 +24,14 @@ function isPrime(int $num): bool
 
 function runPrime(): void
 {
-    $data = [];
-    while (count($data) < NUMBER_OF_ROUNDS) {
+    $gameData = [];
+    while (count($gameData) < NUMBER_OF_ROUNDS) {
         $num = rand(1, 30);
 
         $question = "{$num}";
         $correctAnswer = (isPrime($num)) ? ('yes') : ('no');
-        $data[] = [$question, $correctAnswer];
+        $gameData[] = [$question, $correctAnswer];
     }
 
-    runGame(DESCRIPTION, $data);
+    runGame(DESCRIPTION, $gameData);
 }

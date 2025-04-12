@@ -35,15 +35,15 @@ function calc(int $num1, int $num2, string $operation): int
 
 function runCalc(): void
 {
-    $data = [];
-    while (count($data) < NUMBER_OF_ROUNDS) {
+    $gameData = [];
+    while (count($gameData) < NUMBER_OF_ROUNDS) {
         $num1 = rand(1, 20);
         $num2 = rand(1, 10);
         $operation = randomOperation();
         $question = "{$num1} {$operation} {$num2}";
         $correctAnswer = calc($num1, $num2, $operation);
-        $data[] = [$question, $correctAnswer];
+        $gameData[] = [$question, $correctAnswer];
     }
 
-    runGame(DESCRIPTION, $data);
+    runGame(DESCRIPTION, $gameData);
 }

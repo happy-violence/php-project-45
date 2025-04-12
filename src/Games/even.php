@@ -15,8 +15,8 @@ function isEven(int $num): bool
 
 function runEven(): void
 {
-    $data = [];
-    while (count($data) < NUMBER_OF_ROUNDS) {
+    $gameData = [];
+    while (count($gameData) < NUMBER_OF_ROUNDS) {
         $num = rand(1, 100);
 
         $question = "{$num}";
@@ -24,5 +24,5 @@ function runEven(): void
         $data[] = [$question, $correctAnswer];
     }
 
-    runGame(DESCRIPTION, $data);
+    runGame(DESCRIPTION, $gameData);
 }

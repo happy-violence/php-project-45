@@ -20,15 +20,15 @@ function gcd(int $num1, int $num2): int
 
 function runGcd(): void
 {
-    $data = [];
-    while (count($data) < NUMBER_OF_ROUNDS) {
+    $gameData = [];
+    while (count($gameData) < NUMBER_OF_ROUNDS) {
         $num1 = rand(1, 20);
         $num2 = rand(1, 10);
 
         $question = "{$num1} {$num2}";
         $correctAnswer = gcd($num1, $num2);
-        $data[] = [$question, $correctAnswer];
+        $gameData[] = [$question, $correctAnswer];
     }
 
-    runGame(DESCRIPTION, $data);
+    runGame(DESCRIPTION, $gameData);
 }

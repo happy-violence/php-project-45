@@ -24,8 +24,8 @@ function progression(): array
 
 function runProgression(): void
 {
-    $data = [];
-    while (count($data) < NUMBER_OF_ROUNDS) {
+    $gameData = [];
+    while (count($gameData) < NUMBER_OF_ROUNDS) {
         $progression = progression();
         $len = count($progression);
         $hiddenPosition = rand(0, $len - 1);
@@ -33,8 +33,8 @@ function runProgression(): void
         $progression[$hiddenPosition] = '..';
         $stringProgression = implode(' ', $progression);
         $question = "{$stringProgression}";
-        $data[] = [$question, $correctAnswer];
+        $gameData[] = [$question, $correctAnswer];
     }
 
-    runGame(DESCRIPTION, $data);
+    runGame(DESCRIPTION, $gameData);
 }
