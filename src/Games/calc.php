@@ -28,7 +28,7 @@ function calc(int $num1, int $num2, string $operation): int
         case '+':
             return $num1 + $num2;
         default:
-            break;
+            throw new \Exception('Something went wrong, please try again later');
     }
 }
 
