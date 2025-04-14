@@ -16,7 +16,7 @@ function runGame(string $description, array $gameData): void
 
     foreach ($gameData as [$question, $correctAnswer]) {
         line("Question: {$question}");
-        $userAnswer = (int) prompt("Your answer");
+        $userAnswer = prompt("Your answer");
 
         if ($userAnswer !== $correctAnswer) {
             // phpcs:ignore

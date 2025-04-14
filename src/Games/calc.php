@@ -40,7 +40,7 @@ function runCalc(): void
         $num2 = rand(1, 10);
         $operation = randomOperation();
         $question = "{$num1} {$operation} {$num2}";
-        $correctAnswer = calc($num1, $num2, $operation);
+        $correctAnswer = (string) calc($num1, $num2, $operation);
         $gameData[] = [$question, $correctAnswer];
     }
 

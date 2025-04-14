@@ -29,10 +29,10 @@ function runProgression(): void
         $progression = progression();
         $len = count($progression);
         $hiddenPosition = rand(0, $len - 1);
-        $correctAnswer = $progression[$hiddenPosition];
+        $correctAnswer = (string) $progression[$hiddenPosition];
         $progression[$hiddenPosition] = '..';
         $stringProgression = implode(' ', $progression);
-        $question = "{$stringProgression}";
+        $question = $stringProgression;
         $gameData[] = [$question, $correctAnswer];
     }
 

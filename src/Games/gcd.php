@@ -26,7 +26,7 @@ function runGcd(): void
         $num2 = rand(1, 10);
 
         $question = "{$num1} {$num2}";
-        $correctAnswer = gcd($num1, $num2);
+        $correctAnswer = (string) gcd($num1, $num2);
         $gameData[] = [$question, $correctAnswer];
     }
 

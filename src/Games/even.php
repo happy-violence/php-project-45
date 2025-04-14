@@ -19,7 +19,7 @@ function runEven(): void
     while (count($gameData) < NUMBER_OF_ROUNDS) {
         $num = rand(1, 100);
 
-        $question = "{$num}";
+        $question = $num;
         $correctAnswer = (isEven($num)) ? ('yes') : ('no');
         $gameData[] = [$question, $correctAnswer];
     }
