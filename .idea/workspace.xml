@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="455b14c1-2eab-4d63-b079-17c8fd6e83f5" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/wp-cli/php-cli-tools" />
+      <path value="$PROJECT_DIR$/vendor/squizlabs/php_codesniffer" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2u51VJLgt028WJQAk74swZ35N3s" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Makefile Target.Makefile.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/svetlana/projects/hexlet/BrainGames&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.php.quality.tools.php.code.sniffer&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PS-241.15989.102" />
+        <option value="bundled-php-predefined-ba97393d7c68-c76157a7178b-com.jetbrains.php.sharedIndexes-PS-241.15989.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="455b14c1-2eab-4d63-b079-17c8fd6e83f5" name="Changes" comment="" />
+      <created>1741523643406</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1741523643406</updated>
+      <workItem from="1741523644439" duration="5583000" />
+      <workItem from="1741806961352" duration="219000" />
+      <workItem from="1741807223129" duration="8000" />
+      <workItem from="1741807463126" duration="581000" />
+      <workItem from="1741885669190" duration="4188000" />
+      <workItem from="1742040550140" duration="2156000" />
+      <workItem from="1742236188684" duration="3533000" />
+      <workItem from="1742311606075" duration="3713000" />
+      <workItem from="1742365701796" duration="5134000" />
+      <workItem from="1742450144548" duration="814000" />
+      <workItem from="1742451264066" duration="4595000" />
+      <workItem from="1742496519855" duration="2365000" />
+      <workItem from="1742575301902" duration="2787000" />
+      <workItem from="1742640554478" duration="4176000" />
+      <workItem from="1742715978440" duration="5426000" />
+      <workItem from="1742839449866" duration="1168000" />
+      <workItem from="1742925755176" duration="4379000" />
+      <workItem from="1743011760796" duration="4179000" />
+      <workItem from="1743085379538" duration="7146000" />
+      <workItem from="1743185075140" duration="4253000" />
+      <workItem from="1743432685614" duration="3165000" />
+      <workItem from="1743519126020" duration="6580000" />
+      <workItem from="1743613676897" duration="5122000" />
+      <workItem from="1743691665197" duration="7904000" />
+      <workItem from="1743771675973" duration="10951000" />
+      <workItem from="1743956334325" duration="4051000" />
+      <workItem from="1744049752320" duration="2031000" />
+      <workItem from="1744135612818" duration="2219000" />
+      <workItem from="1744297298767" duration="611000" />
+      <workItem from="1744378125238" duration="10639000" />
+      <workItem from="1744441549590" duration="11541000" />
+      <workItem from="1744565584059" duration="1917000" />
+      <workItem from="1744616172538" duration="12247000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
