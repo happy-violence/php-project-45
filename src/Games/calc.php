@@ -13,11 +13,6 @@ const OPERATIONS = [
     '*'
 ];
 
-function randomOperation(): string
-{
-    return OPERATIONS[array_rand(OPERATIONS)];
-}
-
 function calc(int $num1, int $num2, string $operation): int
 {
     switch ($operation) {
@@ -38,7 +33,7 @@ function runCalc(): void
     while (count($gameData) < ROUNDS_COUNT) {
         $num1 = rand(1, 20);
         $num2 = rand(1, 10);
-        $operation = randomOperation();
+        $operation = OPERATIONS[array_rand(OPERATIONS)];
         $question = "{$num1} {$operation} {$num2}";
         $correctAnswer = (string) calc($num1, $num2, $operation);
         $gameData[] = [$question, $correctAnswer];
