@@ -4,7 +4,7 @@ namespace BrainGames\Games\Progression;
 
 use function BrainGames\Engine\runGame;
 
-use const BrainGames\Engine\NUMBER_OF_ROUNDS;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION = 'What number is missing in the progression?';
 
@@ -25,7 +25,7 @@ function progression(): array
 function runProgression(): void
 {
     $gameData = [];
-    while (count($gameData) < NUMBER_OF_ROUNDS) {
+    while (count($gameData) < ROUNDS_COUNT) {
         $progression = progression();
         $len = count($progression);
         $hiddenPosition = rand(0, $len - 1);

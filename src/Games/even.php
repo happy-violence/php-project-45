@@ -4,7 +4,7 @@ namespace BrainGames\Games\Even;
 
 use function BrainGames\Engine\runGame;
 
-use const BrainGames\Engine\NUMBER_OF_ROUNDS;
+use const BrainGames\Engine\ROUNDS_COUNT;
 
 const DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -16,7 +16,7 @@ function isEven(int $num): bool
 function runEven(): void
 {
     $gameData = [];
-    while (count($gameData) < NUMBER_OF_ROUNDS) {
+    while (count($gameData) < ROUNDS_COUNT) {
         $num = rand(1, 100);
 
         $question = $num;
